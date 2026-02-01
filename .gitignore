@@ -20,12 +20,13 @@ target/
 logs/
 
 ############################################
-# Docker (VERY IMPORTANT)
+# Docker
 ############################################
 # Never commit database data
 **/docker/**/data/
 **/docker/**/mysql/
 **/docker/**/mongo/
+
 
 # Local Docker override files
 docker-compose.override.yml
@@ -56,3 +57,9 @@ failsafe-reports/
 node_modules/
 dist/
 build/
+
+############################################
+# Service local database data (DO NOT COMMIT)
+product-service/data/
+order-service/data/
+inventory-service/data/
